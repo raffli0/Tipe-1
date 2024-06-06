@@ -11,14 +11,14 @@ int main() {
     FILE *bukuFile;
     Buku buku;
 
-    // Buka file buku.dat untuk ditulis
+    // buka file buku.dat untuk ditulis
     bukuFile = fopen("buku.dat", "wb");
     if (bukuFile == NULL) {
-        printf("Gagal membuka file buku.dat untuk ditulis.\n");
+        printf("gagal membuka file buku.dat\n");
         return 1;
     }
 
-    // Tulis data buku ke dalam file
+    // tulis data buku ke dalam file buku.dat
     buku.kode_buku = 1021;
     buku.jenis = 1;
     buku.harga_sewa = 2500;
@@ -76,7 +76,7 @@ int main() {
     // Tutup file
     fclose(bukuFile);
 
-    printf("Data buku telah ditulis ke dalam file buku.dat.\n");
+    printf("data buku telah ditulis ke dalam file buku.dat.\n");
 
     return 0;
 }
