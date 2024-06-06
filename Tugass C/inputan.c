@@ -13,11 +13,7 @@ int main() {
 
     // buka file buku.dat untuk ditulis
     bukuFile = fopen("buku.dat", "wb");
-    if (bukuFile == NULL) {
-        printf("gagal membuka file buku.dat\n");
-        return 1;
-    }
-
+    
     // tulis data buku ke dalam file buku.dat
     buku.kode_buku = 1021;
     buku.jenis = 1;
